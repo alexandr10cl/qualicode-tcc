@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>QualiCode — Análise Qualitativa Local</title>
+  <meta name="description" content="Ferramenta local de codificação aberta e axial para análise qualitativa. 100% no navegador." />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><rect width='24' height='24' rx='6' fill='%234f46e5'/><text x='12' y='17' font-size='14' font-family='Arial' font-weight='bold' fill='white' text-anchor='middle'>Q</text></svg>" />
+</head>
+<body>
+  <div id="app">
+    <nav id="navrail" class="hidden"></nav>
+    <main id="screen"></main>
+  </div>
+  <div id="toast" class="toast"></div>
+
+  <!-- Núcleo (ordem importa: scripts clássicos, namespace global QC) -->
+  <script src="js/util.js"></script>
+  <script src="js/icons.js"></script>
+  <script src="js/db.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/seed.js"></script>
+  <script src="js/components.js"></script>
+
+  <!-- Telas -->
+  <script src="js/screens/projects.js"></script>
+  <script src="js/screens/coding.js"></script>
+  <script src="js/screens/codebook.js"></script>
+  <script src="js/screens/book.js"></script>
+  <script src="js/screens/network.js"></script>
+  <script src="js/screens/retrieval.js"></script>
+  <script src="js/screens/memos.js"></script>
+  <script src="js/screens/dashboard.js"></script>
+
+  <!-- Controlador -->
+  <script src="js/app.js"></script>
+</body>
+</html>
